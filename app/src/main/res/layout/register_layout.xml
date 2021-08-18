@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    >
+
+    <ScrollView
+        android:id="@+id/signupscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/signupapplogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                 />
+
+            <TextView
+                android:id="@+id/signupheadingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signupapplogo"
+                android:layout_centerHorizontal="true"
+                android:text="Sign up"
+                android:layout_marginBottom="15dp"
+                android:textColor="#416E01"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/etfullname"
+                android:text="Fullname"
+                android:layout_width="397dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/signupheadingtext"
+                android:layout_marginBottom="15dp"
+                android:drawablePadding="5dp"
+
+                android:hint="Full name"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="397dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/etfullname"
+                android:layout_marginBottom="10dp"
+
+                android:drawablePadding="5dp"
+
+                android:hint="Email"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="383dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/etEmail"
+                android:layout_marginBottom="10dp"
+
+                android:drawablePadding="10dp"
+
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="376dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/etMobile"
+                android:layout_marginBottom="10dp"
+
+                android:drawablePadding="10dp"
+
+                android:hint="Address"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="386dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/etAddress"
+                android:layout_marginBottom="10dp"
+
+                android:drawablePadding="10dp"
+
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/etCPassword"
+                android:layout_width="379dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/etPassword"
+                android:layout_marginBottom="10dp"
+
+                android:drawablePadding="10dp"
+
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCPassword"
+                android:id="@+id/btnSignup"
+                android:text="Sign up 📑"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gotoLogin"
+                android:textColor="#047ED6"
+                android:text="Already a member ? Click here to login"
+                android:layout_below="@id/btnSignup"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
